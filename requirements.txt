@@ -2,3 +2,6 @@ django
 djangorestframework
 requests
 python-dotenv
+django-tinymce
+ShopifyAPI
+google-genai

@@ -1,0 +1,31 @@
+{
+  "name": "seo4shopify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "./node_modules/.bin/tailwindcss -i ./static/css/styles.css -o ./static/css/output.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aavendano/seo4shopify.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/aavendano/seo4shopify/issues"
+  },
+  "homepage": "https://github.com/aavendano/seo4shopify#readme",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.13",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.13"
+  },
+  "dependencies": {
+    "preline": "^3.2.3"
+  }
+}

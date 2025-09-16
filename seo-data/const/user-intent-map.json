@@ -1,0 +1,49 @@
+{
+  "intent_mapping": {
+    "awareness": {
+      "keywords": [
+        "what is",
+        "how to",
+        "guide to",
+        "introduction to",
+        "beginner's guide"
+      ],
+      "link_priority": ["articles", "educational_collections", "guides"],
+      "anchor_style": "informational"
+    },
+    "consideration": {
+      "keywords": [
+        "best",
+        "top",
+        "compare",
+        "vs",
+        "review",
+        "features"
+      ],
+      "link_priority": ["collections", "comparison_articles", "featured_products"],
+      "anchor_style": "comparative"
+    },
+    "decision": {
+      "keywords": [
+        "buy",
+        "purchase",
+        "price",
+        "discount",
+        "sale",
+        "shop"
+      ],
+      "link_priority": ["products", "promotional_collections", "deals"],
+      "anchor_style": "commercial"
+    },
+    "post_purchase": {
+      "keywords": [
+        "how to use",
+        "care instructions",
+        "maintenance",
+        "tips"
+      ],
+      "link_priority": ["support_articles", "accessories", "care_products"],
+      "anchor_style": "supportive"
+    }
+  }
+}

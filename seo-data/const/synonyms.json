@@ -1,0 +1,34 @@
+{
+  "synonyms": {
+    "sex_toys_for_men": {
+      "primary": "sex toys for men",
+      "variations": [
+        "male sex toys",
+        "men's pleasure products",
+        "adult toys for men",
+        "masculine pleasure devices",
+        "male masturbators",
+        "men's intimate products"
+      ]
+    },
+    "vibrators": {
+      "primary": "vibrators",
+      "variations": [
+        "vibes",
+        "personal massagers",
+        "intimate massagers",
+        "pleasure devices",
+        "stimulators"
+      ]
+    },
+    "couples_products": {
+      "primary": "sex toys for couples",
+      "variations": [
+        "couple's toys",
+        "shared pleasure products",
+        "intimate accessories for two",
+        "relationship enhancers"
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "anchor_templates": {
+    "product_mentions": {
+      "patterns": [
+        "{brand} {product_type}",
+        "the {adjective} {product_name}",
+        "{product_name} from {brand}",
+        "popular {product_category} like {product_name}"
+      ],
+      "examples": [
+        "Tenga masturbators",
+        "the innovative WeVibe Sync",
+        "Satisfyer Pro 2 from Satisfyer",
+        "popular couples toys like the We-Vibe Chorus"
+      ]
+    },
+    "collection_links": {
+      "patterns": [
+        "{category} collection",
+        "our {adjective} {category}",
+        "{category} selection",
+        "browse {category}"
+      ],
+      "examples": [
+        "sex toys for men collection",
+        "our premium vibrator selection",
+        "couples toys collection",
+        "browse male masturbators"
+      ]
+    },
+    "informational_links": {
+      "patterns": [
+        "learn more about {topic}",
+        "{topic} guide",
+        "complete {topic} tutorial",
+        "{topic} tips and tricks"
+      ],
+      "examples": [
+        "learn more about prostate massage",
+        "couples intimacy guide",
+        "complete beginner's tutorial",
+        "pleasure enhancement tips and tricks"
+      ]
+    }
+  },
+  "style_guidelines": {
+    "natural_flow": "Anchor text should read naturally within the sentence",
+    "descriptive": "Use descriptive phrases that match user search intent",
+    "length": "Aim for 2-5 words for optimal SEO impact",
+    "avoid": ["click here", "read more", "this link", "here"]
+  }
+}

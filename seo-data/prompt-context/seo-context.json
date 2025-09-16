@@ -1,0 +1,156 @@
+{
+  "store_context": {
+    "store_name": "PlayLoveToys",
+    "domain": "playlovetoys.ca",
+    "industry": "adult toys and intimate products",
+    "target_market": "Canadian consumers",
+    "currency": "CAD",
+    "primary_language": "English",
+    "secondary_language": "Spanish"
+  },
+  
+  "seo_strategy": {
+    "objective": "Optimize internal linking to enhance user experience and SEO performance",
+    "focus_areas": [
+      "Product discovery",
+      "Collection navigation", 
+      "Educational content linking",
+      "Brand-specific targeting"
+    ],
+    "link_hierarchy": ["Products", "Collections", "Related Articles"],
+    "max_links_per_article": 8,
+    "priority_placement": "First 200 words when contextually appropriate"
+  },
+
+  "content_guidelines": {
+    "tone": "Educational, respectful, and professional",
+    "approach": "Sex-positive and inclusive",
+    "target_audience": {
+      "primary": "Adults 18+ seeking intimate products",
+      "segments": ["couples", "individuals", "beginners", "experienced users"]
+    },
+    "content_types": [
+      "Educational guides",
+      "Product reviews", 
+      "How-to articles",
+      "Buying guides",
+      "Brand spotlights"
+    ]
+  },
+
+  "linking_rules": {
+    "mandatory_links": {
+      "product_mentions": "Always link specific product mentions",
+      "reserved_keywords": "Use exact URLs for reserved terms"
+    },
+    "prohibited_links": {
+      "self_linking": "Never link to current collection",
+      "over_optimization": "Max 2 links to same destination",
+      "irrelevant_content": "Only link semantically related content"
+    },
+    "quality_standards": {
+      "relevance": "Links must add genuine value",
+      "natural_flow": "Anchor text must read naturally",
+      "user_expectation": "Linked content must fulfill anchor text promise"
+    }
+  },
+
+  "reserved_keywords": {
+    "Male sex toys": {
+      "url": "https://playlovetoys.ca/pages/collection/male-sex-toys",
+      "priority": "high",
+      "variations": ["male toys", "men's toys"]
+    },
+    "Sex Toys For Men": {
+      "url": "https://playlovetoys.ca/collections/sex-toys-for-men", 
+      "priority": "high",
+      "variations": ["sex toys for men", "men's sex toys"]
+    },
+    "WeVibe": {
+      "url": "https://playlovetoys.ca/collections/we-vibe",
+      "priority": "medium",
+      "variations": ["We-Vibe", "We Vibe"]
+    },
+    "Tenga": {
+      "url": "https://playlovetoys.ca/collections/tenga",
+      "priority": "medium",
+      "variations": ["TENGA"]
+    }
+  },
+
+  "user_intent_mapping": {
+    "awareness": {
+      "indicators": ["what is", "how to", "guide", "introduction", "beginner"],
+      "link_targets": ["educational_articles", "basic_collections", "guides"],
+      "anchor_style": "informational"
+    },
+    "consideration": {
+      "indicators": ["best", "top", "compare", "review", "features", "vs"],
+      "link_targets": ["product_collections", "comparison_guides", "featured_products"],
+      "anchor_style": "comparative"
+    },
+    "decision": {
+      "indicators": ["buy", "purchase", "price", "discount", "shop", "order"],
+      "link_targets": ["specific_products", "promotional_collections", "deals"],
+      "anchor_style": "commercial"
+    }
+  },
+
+  "anchor_text_guidelines": {
+    "best_practices": [
+      "Use descriptive phrases (2-5 words)",
+      "Match user search intent",
+      "Include target keywords naturally",
+      "Avoid generic terms like 'click here'"
+    ],
+    "templates": {
+      "product_links": [
+        "{brand} {product_type}",
+        "the {adjective} {product_name}",
+        "{product_category} like {product_name}"
+      ],
+      "collection_links": [
+        "{category} collection",
+        "our {adjective} {category} selection",
+        "browse {category}"
+      ],
+      "article_links": [
+        "{topic} guide",
+        "learn about {topic}",
+        "{topic} tips"
+      ]
+    }
+  },
+
+  "semantic_relationships": {
+    "product_categories": {
+      "vibrators": ["clitoral stimulators", "g-spot", "wand massagers"],
+      "male_toys": ["masturbators", "strokers", "prostate massagers"],
+      "couples_toys": ["cock rings", "remote control", "app-controlled"],
+      "anal_toys": ["plugs", "beads", "prostate toys"],
+      "accessories": ["lubricants", "cleaners", "storage"]
+    },
+    "brand_associations": {
+      "premium": ["Lelo", "We-Vibe", "Satisfyer"],
+      "innovative": ["Tenga", "Kiiroo", "Lovense"],
+      "beginner_friendly": ["b-Vibe", "Je Joue"]
+    }
+  },
+
+  "technical_specifications": {
+    "url_format": "Use canonical URLs with handles, not IDs",
+    "link_attributes": "Standard internal links (no special attributes)",
+    "tracking": "Monitor click-through rates and user engagement",
+    "testing": "A/B test anchor text variations"
+  },
+
+  "content_analysis_framework": {
+    "step_1": "Identify main topics and subtopics",
+    "step_2": "Map user intent throughout article",
+    "step_3": "Find natural linking opportunities", 
+    "step_4": "Match content to products/collections",
+    "step_5": "Apply reserved keyword rules",
+    "step_6": "Optimize anchor text for naturalness",
+    "step_7": "Validate link relevance and value"
+  }
+}

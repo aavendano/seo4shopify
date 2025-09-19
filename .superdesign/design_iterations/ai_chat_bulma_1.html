@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat - Light Sidebar Theme</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Light Sidebar Theme -->
+    <style>
+:root {
+  --background: oklch(1.0000 0 0);
+  --foreground: oklch(0.0000 0 0);
+  --card: oklch(1.0000 0 0);
+  --card-foreground: oklch(0.0000 0 0);
+  --popover: oklch(1.0000 0 0);
+  --popover-foreground: oklch(0.0000 0 0);
+  --primary: oklch(0.3500 0.1800 295.0000); /* #533278 */
+  --primary-foreground: oklch(1.0000 0 0);
+  --secondary: oklch(0.6200 0.2200 15.0000); /* #F4436C */
+  --secondary-foreground: oklch(1.0000 0 0);
+  --muted: #b4b4b4;
+  --muted-foreground: oklch(0.4500 0.0100 0);
+  --accent: oklch(0.4200 0.1200 200.0000); /* #0C7489 */
+  --accent-foreground: oklch(1.0000 0 0);
+  --destructive: oklch(0.4200 0.1200 200.0000); /* #0C7489 */
+  --destructive-foreground: oklch(1.0000 0 0);
+  --border: oklch(0.8500 0.0100 0);
+  --input: oklch(1.0000 0 0);
+  --ring: oklch(0.3500 0.1800 295.0000);
+  --chart-1: oklch(0.3500 0.1800 295.0000);
+  --chart-2: oklch(0.6200 0.2200 15.0000);
+  --chart-3: oklch(0.4200 0.1200 200.0000);
+  --chart-4: #b4b4b4;
+  --chart-5: oklch(0.5000 0.1000 250.0000);
+  --sidebar: oklch(0.9568 0.0000 0); /* #f4f4f4 */
+  --sidebar-foreground: oklch(0.2000 0 0);
+  --sidebar-primary: oklch(0.3500 0.1800 295.0000);
+  --sidebar-primary-foreground: oklch(1.0000 0 0);
+  --sidebar-accent: oklch(0.9000 0 0);
+  --sidebar-accent-foreground: oklch(0.2000 0 0);
+  --sidebar-border: oklch(0.8500 0 0);
+  --sidebar-ring: oklch(0.3500 0.1800 295.0000);
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --radius: 0.5rem;
+  --shadow-2xs: 0 1px 2px 0 hsl(0 0% 0% / 0.05);
+  --shadow-xs: 0 1px 3px 0 hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
+  --shadow-sm: 0 1px 3px 0 hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
+  --shadow: 0 4px 6px -1px hsl(0 0% 0% / 0.1), 0 2px 4px -2px hsl(0 0% 0% / 0.1);
+  --shadow-md: 0 4px 6px -1px hsl(0 0% 0% / 0.1), 0 2px 4px -2px hsl(0 0% 0% / 0.1);
+  --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.1), 0 4px 6px -4px hsl(0 0% 0% / 0.1);
+  --shadow-xl: 0 20px 25px -5px hsl(0 0% 0% / 0.1), 0 8px 10px -6px hsl(0 0% 0% / 0.1);
+  --shadow-2xl: 0 25px 50px -12px hsl(0 0% 0% / 0.25);
+  --tracking-normal: 0em;
+  --spacing: 0.25rem;
+}
+
+/* Bulma Custom Variables Override */
+:root {
+  --bulma-primary-h: 295deg;
+  --bulma-primary-s: 18%;
+  --bulma-primary-l: 35%;
+  --bulma-info-h: 200deg;
+  --bulma-info-s: 12%;
+  --bulma-info-l: 42%;
+  --bulma-danger-h: 15deg;
+  --bulma-danger-s: 22%;
+  --bulma-danger-l: 62%;
+}
+
+/* Custom color classes for direct hex usage */
+.bg-purple { background-color: #533278 !important; }
+.bg-pink { background-color: #F4436C !important; }
+.bg-gray { background-color: #B4B4B4 !important; }
+.bg-teal { background-color: #0C7489 !important; }
+.bg-light-gray { background-color: #f4f4f4 !important; }
+
+.text-purple { color: #533278 !important; }
+.text-pink { color: #F4436C !important; }
+.text-gray { color: #B4B4B4 !important; }
+.text-teal { color: #0C7489 !important; }
+.text-light-gray { color: #f4f4f4 !important; }
+    </style>
+    
+
+</head>
+<body>
+    <div id="app">
+        <div class="chat-container">
+            <!-- Header Navbar -->
+            <nav class="navbar is-primary" role="navigation">
+                <div class="navbar-brand">
+                    <a class="navbar-item" @click="toggleSidebar">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                    <div class="navbar-item">
+                        <div class="is-flex is-align-items-center">
+                            <img src="https://cdn.shopify.com/s/files/1/0603/8198/6891/files/logo-round-playlovetoys.png" 
+                                 alt="PlayLoveToys Logo" 
+                                 class="logo-image mr-2">
+                            <div>
+                                <strong>PLT Assistant</strong>
+                                <div class="chat-header-status">
+                                    <i class="fas fa-circle status-online" style="font-size: 0.5rem;"></i>
+                                    En línea
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar-menu">
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                            <div class="buttons">
+                                <button class="button is-primary is-inverted is-outlined" @click="newChat">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                                <button class="button is-primary is-inverted is-outlined">
+                                    <i class="fas fa-cog"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="columns is-gapless" style="flex: 1;">
+                <!-- Sidebar -->
+                <transition name="sidebar-slide">
+                    <div v-show="sidebarVisible" class="column is-narrow sidebar">
+                        <div class="p-4">
+                            <button class="button new-chat-btn is-fullwidth mb-4" @click="newChat">
+                                <i class="fas fa-plus mr-2"></i>
+                                Nuevo Chat
+                            </button>
+                            
+                            <aside class="menu">
+                                <p class="menu-label">Hoy</p>
+                                <ul class="menu-list">
+                                    <li v-for="chat in todayChats" :key="chat.id">
+                                        <a :class="{ 'is-active': currentChatId === chat.id }" @click="selectChat(chat.id)">
+                                            <i class="fas fa-comment mr-2"></i>
+                                            {{ chat.title }}
+                                        </a>
+                                    </li>
+                                </ul>
+                                
+                                <p class="menu-label">Ayer</p>
+                                <ul class="menu-list">
+                                    <li v-for="chat in yesterdayChats" :key="chat.id">
+                                        <a :class="{ 'is-active': currentChatId === chat.id }" @click="selectChat(chat.id)">
+                                            <i class="fas fa-comment mr-2"></i>
+                                            {{ chat.title }}
+                                        </a>
+                                    </li>
+                                </ul>
+                            </aside>
+                        </div>
+                    </div>
+                </transition>
+
+                <!-- Main Chat Area -->
+                <div class="column">
+                    <div class="chat-messages" ref="messagesContainer">
+                        <transition-group name="message" tag="div">
+                            <div v-for="message in messages" :key="message.id" 
+                                 class="message-bubble" 
+                                 :class="{ 'is-user': message.isUser, 'is-ai': !message.isUser }">
+                                <article class="message" :class="{ 'is-user': message.isUser, 'is-ai': !message.isUser }">
+                                    <div class="message-body">
+                                        <div class="is-flex is-align-items-flex-start">
+                                            <img v-if="!message.isUser" 
+                                                 src="https://cdn.shopify.com/s/files/1/0603/8198/6891/files/logo-round-playlovetoys.png" 
+                                                 alt="PlayLoveToys" 
+                                                 class="message-avatar mr-2 mt-1">
+                                            <div class="is-flex-grow-1">
+                                                <p v-html="message.text"></p>
+                                                <div class="is-flex is-justify-content-space-between is-align-items-center">
+                                                    <div class="message-time" :class="{ 'has-text-right': message.isUser }">
+                                                        {{ formatTime(message.timestamp) }}
+                                                    </div>
+                                                    <div class="message-actions">
+                                                        <button class="button is-small is-ghost">
+                                                            <i class="fas fa-copy"></i>
+                                                        </button>
+                                                        <button class="button is-small is-ghost">
+                                                            <i class="fas fa-heart"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </transition-group>
+                        
+                        <!-- Typing Indicator -->
+                        <transition name="fade">
+                            <div v-if="isTyping" class="typing-indicator">
+                                <i class="fas fa-robot mr-2"></i>
+                                <span>AI está escribiendo</span>
+                                <div class="typing-dots">
+                                    <div class="typing-dot"></div>
+                                    <div class="typing-dot"></div>
+                                    <div class="typing-dot"></div>
+                                </div>
+                            </div>
+                        </transition>
+                    </div>
+
+                    <!-- Input Area -->
+                    <div class="chat-input-area">
+                        <div class="field has-addons">
+                            <div class="control">
+                                <button class="button is-static attachment-btn">
+                                    <i class="fas fa-paperclip"></i>
+                                </button>
+                            </div>
+                            <div class="control">
+                                <button class="button is-static voice-btn">
+                                    <i class="fas fa-microphone"></i>
+                                </button>
+                            </div>
+                            <div class="control is-expanded">
+                                <input class="input" 
+                                       type="text" 
+                                       placeholder="Escribe tu mensaje..."
+                                       v-model="newMessage"
+                                       @keyup.enter="sendMessage"
+                                       :disabled="isTyping">
+                            </div>
+                            <div class="control">
+                                <button class="button is-primary" 
+                                        @click="sendMessage"
+                                        :disabled="!newMessage.trim() || isTyping"
+                                        :class="{ 'is-loading': isTyping }">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vue.js 3 -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    
+    <script>
+        const { createApp } = Vue;
+
+        createApp({
+            data() {
+                return {
+                    sidebarVisible: true,
+                    currentChatId: 1,
+                    newMessage: '',
+                    isTyping: false,
+                    messages: [
+                        {
+                            id: 1,
+                            text: '¡Hola! Soy tu asistente de IA. ¿En qué puedo ayudarte hoy?',
+                            isUser: false,
+                            timestamp: new Date()
+                        },
+                        {
+                            id: 2,
+                            text: 'Claro, aquí tienes un ejemplo de código en JavaScript: <pre><code>const greet = (name) => {\\n  console.log(`Hello, ${name}!`);\\n};\\n\\ngreet("World");</code></pre>',
+                            isUser: false,
+                            timestamp: new Date()
+                        }
+                    ],
+                    todayChats: [
+                        { id: 1, title: 'Consulta sobre proyecto' },
+                        { id: 2, title: 'Ayuda con código' }
+                    ],
+                    yesterdayChats: [
+                        { id: 3, title: 'Diseño de interfaz' },
+                        { id: 4, title: 'Optimización web' }
+                    ]
+                }
+            },
+            methods: {
+                toggleSidebar() {
+                    this.sidebarVisible = !this.sidebarVisible;
+                },
+                newChat() {
+                    this.messages = [
+                        {
+                            id: Date.now(),
+                            text: '¡Hola! Soy tu asistente de IA. ¿En qué puedo ayudarte hoy?',
+                            isUser: false,
+                            timestamp: new Date()
+                        }
+                    ];
+                    this.newMessage = '';
+                },
+                selectChat(chatId) {
+                    this.currentChatId = chatId;
+                    // Aquí cargarías los mensajes del chat seleccionado
+                },
+                async sendMessage() {
+                    if (!this.newMessage.trim()) return;
+
+                    const userMessage = {
+                        id: Date.now(),
+                        text: this.newMessage,
+                        isUser: true,
+                        timestamp: new Date()
+                    };
+                    
+                    this.messages.push(userMessage);
+                    this.newMessage = '';
+                    
+                    this.$nextTick(() => this.scrollToBottom());
+
+                    this.isTyping = true;
+                    
+                    setTimeout(() => {
+                        const aiResponses = [
+                            'Entiendo tu consulta. Déjame ayudarte con eso.',
+                            'Esa es una excelente pregunta. Te explico paso a paso.',
+                            'Perfecto, puedo asistirte con eso. Aquí tienes la información.',
+                            'Me parece muy interesante tu planteamiento. Te sugiero lo siguiente.',
+                            'Claro, puedo ayudarte. Basándome en tu consulta, te recomiendo...'
+                        ];
+                        
+                        const aiMessage = {
+                            id: Date.now() + 1,
+                            text: aiResponses[Math.floor(Math.random() * aiResponses.length)],
+                            isUser: false,
+                            timestamp: new Date()
+                        };
+                        
+                        this.messages.push(aiMessage);
+                        this.isTyping = false;
+                        
+                        this.$nextTick(() => this.scrollToBottom());
+                    }, 2000);
+                },
+                formatTime(timestamp) {
+                    return timestamp.toLocaleTimeString('es-ES', { 
+                        hour: '2-digit', 
+                        minute: '2-digit' 
+                    });
+                },
+                scrollToBottom() {
+                    const container = this.$refs.messagesContainer;
+                    container.scrollTop = container.scrollHeight;
+                }
+            },
+            mounted() {
+                this.$nextTick(() => this.scrollToBottom());
+            }
+        }).mount('#app');
+    </script>
+</body>
+</html>

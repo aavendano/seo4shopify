@@ -1,0 +1,53 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <!-- Google Fonts -->
+    <link defer href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" defer href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" defer href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Light Sidebar Theme -->
+
+    <link rel="stylesheet" defer href="{% static 'css/variables.css' %}" >
+    <link rel="stylesheet" defer href="{% static 'css/main.css' %}" >
+  </head>
+  
+  <body>
+
+<section id='section-body' class="section">
+    <div id="container-body" class="container">
+
+
+      <div class="columns is-gapless">
+        <template>
+          <aside class="column is-one-quarter">
+            <div class="menu p-4">
+              {% block sidebar %}{% endblock %}
+            </div>
+          </aside>
+        </template>
+        <template>
+          <main class="column">
+            <div class="p-4">
+              {% block content %}{% endblock %}
+            </div>
+          </main>
+        </template>
+      </div>
+        
+
+
+    </div>
+</section>
+
+  </body>
+</html>

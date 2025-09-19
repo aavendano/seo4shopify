@@ -13,6 +13,3 @@ class ContentCreateView(TemplateView):
 
 class ContentEditView(DetailView):
     template_name = 'editor/content.html'
-
-class ChatView(TemplateView):
-    template_name = 'editor/chat.html'

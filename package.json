@@ -26,6 +26,7 @@
     "tailwindcss": "^4.1.13"
   },
   "dependencies": {
+    "bootstrap": "^5.3.8",
     "preline": "^3.2.3"
   }
 }

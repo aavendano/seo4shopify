@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'editor',
     'core',
     'accounts',
+    'chat',
 ]
 
 MIDDLEWARE = [
@@ -59,7 +60,7 @@ ROOT_URLCONF = 'seo4shopify.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates',],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
